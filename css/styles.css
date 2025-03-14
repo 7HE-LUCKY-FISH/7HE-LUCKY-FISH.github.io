@@ -209,8 +209,6 @@ footer p {
   color: #666;
 }
 
-
-/* Responsive styles */
 ::-webkit-scrollbar {
   width: 10px;
   height: 10px;
@@ -243,4 +241,100 @@ footer p {
 
 .about:not(:hover) {
   scrollbar-color: transparent transparent;
+}
+
+
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .about{
+    order: 1;
+  }
+
+
+  .image-stack{
+    max-width: 100%;
+  }
+
+  header h1 {
+    margin: 0;
+    position: static;
+    line-height: normal;
+    font-size: 36px;
+    letter-spacing: 2px;
+  }
+  
+  nav {
+    margin: 15px 0;
+    position: static;
+    line-height: normal;
+  }
+  
+  nav a {
+    margin: 0 10px;
+    display: inline-block;
+    padding: 8px 0;
+  }
+  
+  main {
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+  
+  .about {
+    order: 1;
+    margin-top: 20px;
+  }
+  
+  .images {
+    order: 2;
+    height: auto;
+    position: static;
+    flex: 0 0 auto;
+    margin-bottom: 20px;
+  }
+  
+  .image-stack img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  footer {
+    flex-direction: column;
+    text-align: center;
+    line-height: normal;
+    padding: 15px;
+  }
+  
+  footer p {
+    margin: 0 0 15px 0;
+    position: static;
+  }
+  
+  .social {
+    margin: 0;
+    position: static;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+/* For very small screens */
+@media screen and (max-width: 480px) {
+
+  header h1 {
+    font-size: 28px;
+  }
+  .about p{
+    font-size: 14px;
+  }
+
+  nav a {
+    font-size: 14px;
+    margin: 0 5px;
+  }
 }

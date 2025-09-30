@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const canvas = document.getElementById('background-canvas');
   const ctx = canvas.getContext('2d');
   let particles = [];
-
+  console.log("Script loaded");
   function resizeCanvas() {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;

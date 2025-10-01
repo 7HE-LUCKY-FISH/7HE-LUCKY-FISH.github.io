@@ -10,6 +10,17 @@ body {
   flex-direction: column;
 }
 
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  scrollbar-width: none;
+}
+
+
+
 .container {
   flex: 1;
   max-width: 1200px;
@@ -133,16 +144,6 @@ main {
   letter-spacing: 2px;
 }
 
-.project-title-link {
-  text-decoration: none;
-  color: #333;
-  transition: color 0.2s;
-}
-
-.project-title-link:hover {
-  color: #666;
-}
-
 .tech-stack {
   margin: 15px 0;
   display: flex;
@@ -207,40 +208,6 @@ footer p {
 
 .social a:hover {
   color: #666;
-}
-
-::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
-}
-
-::-webkit-scrollbar-track {
-  background: #f4f4f4;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #333;
-  border-radius: 4px;
-  border: 2px solid #f4f4f4; /* Add border for contrast */
-  min-height: 40px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
-}
-
-/* For Firefox */
-* {
-  scrollbar-width: thin;
-  scrollbar-color: #333 #f4f4f4;
-}
-
-.about:not(:hover)::-webkit-scrollbar-thumb {
-  background: transparent;
-}
-
-.about:not(:hover) {
-  scrollbar-color: transparent transparent;
 }
 
 

@@ -35,16 +35,16 @@ html {
 
 header {
   background-color: #f4f4f4;
-  padding: 20px;
+  padding: 10px; /* Reduced from 20px to bring header closer to top */
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 header h1 {
   margin: 0;
-  margin-left: 50px; /* Move 50px towards center */
+  margin-left: 50px;
   position: relative;
-  top: 40px; /* Move 50px down */
+  top: 20px; /* Reduced from 40px to tighten spacing */
   font-family: "Helvetica neue", sans-serif;
   letter-spacing: 4px;
   line-height: 105px;
@@ -53,9 +53,9 @@ header h1 {
 }
 
 nav {
-  margin-right: 50px; /* Move 50px towards center */
+  margin-right: 50px;
   position: relative;
-  top: 50px; /* Move 50px down */
+  top: 25px; /* Reduced from 50px to tighten spacing */
   font-family: "Helvetica neue", sans-serif;
   font-weight: 300;
   letter-spacing: 4px;
@@ -177,7 +177,7 @@ main {
 /* Updated footer styles */
 footer {
   background-color: #f4f4f4;
-  padding: 20px;
+  padding: 10px; /* Reduced from 20px to bring footer closer to bottom */
   margin-top: auto;
   display: flex;
   justify-content: space-between;
@@ -188,12 +188,11 @@ footer {
   line-height: 90px;
 }
 
-
 footer p {
   margin: 0;
   margin-left: 50px;
   position: relative;
-  top: -25px;
+  top: -15px; /* Adjusted from -25px for balance */
 }
 
 .social {
@@ -201,7 +200,7 @@ footer p {
   gap: 15px;
   margin-right: 50px;
   position: relative;
-  top: -25px;
+  top: -15px; /* Adjusted from -25px for balance */
 }
 
 .social a {
@@ -217,7 +216,7 @@ footer p {
 @media screen and (max-width: 768px) {
   header {
     flex-direction: column;
-    padding: 10px;
+    padding: 5px; /* Reduced from 10px for mobile */
     text-align: center;
   }
   
@@ -277,7 +276,7 @@ footer p {
     flex-direction: column;
     text-align: center;
     line-height: normal;
-    padding: 15px;
+    padding: 5px; /* Reduced from 10px for mobile */
   }
   
   footer p {

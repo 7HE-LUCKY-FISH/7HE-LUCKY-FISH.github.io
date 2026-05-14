@@ -22,17 +22,26 @@
   </header>
   <div class="container">
     <main>
-      <section class="about">
+      <section id = "about" class="about">
         <h2>About</h2>
         <p>I am currently a student at San Jose State University, 
           exploring the fields of Computer Engineering and Software Design.
           With hands-on experience in backend design and proficiency in multiple programming languages, 
-          I am passionate about building efficient and scalable systems. 
+          I am passionate about building efficient and scalable systems. Incoming SWE at Oracle OCI.
         </p>
       </section>
-      <section class="images">
-        <div class="image-stack">
-          <img src="files/profile-picture.jpg" alt="Picture 1">
+      <section class="images" aria-label="Profile photo carousel">
+        <div class="image-stack" data-cycle-delay="3500">
+          <img class="stack-image is-active" src="files/profile-picture.jpg" alt="Bryan Lin profile photo">
+          <!--
+            Add more photos here later and the stack will cycle automatically.
+            Keep the images inside this .image-stack div.
+
+            Example:
+            <img class="stack-image" src="files/profile-picture-2.jpg" alt="Bryan Lin at an event">
+            <img class="stack-image" src="files/profile-picture-3.jpg" alt="Bryan Lin working on a project">
+            <img class="stack-image" src="files/profile-picture-4.jpg" alt="Bryan Lin with friends">
+          -->
         </div>
       </section>
     </main>
